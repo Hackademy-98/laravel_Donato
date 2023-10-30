@@ -1,0 +1,5 @@
+CLONAZIONE DI UN PROGETTO LARAVEL
+ - git clone SSH_KEY
+ - composer update
+ - cp .env.example .env
+ - php artisan key:generate

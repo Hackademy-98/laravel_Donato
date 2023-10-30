@@ -59,26 +59,27 @@
     <div class="container">
         <div class="row">
             <div class="col-12 my-5">
-                <h1 class="text-center">TV series</h1>
-            </div>
-            @foreach ($serieTV as $serie)
-                <div class="col-12 col-md-3 mt-3 d-flex justify-content-center">
-                    <div class="card border-0" style="width: 18rem;">
-                        <img src="{{ $serie['img'] }}" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                            <h5 class="card-title">{{ $serie['name'] }}</h5>
-                            <a href="{{ route('show.series', ['name' => $serie['name']]) }}" class="btn btn-primary">
-                                Go somewhere
-                            </a>
+
+                <div class="card mb-3 border-0">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ $serie['img'] }}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-between">
+                                <h5 class="card-title text-center">{{ $serie['name'] }}</h5>
+                                <p class="card-text">{{ $serie['description'] }}</p>
+                                <p class="card-text text-center">
+                                    {{ $serie['year'] }}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
 
+            </div>
         </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
