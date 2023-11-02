@@ -1,5 +1,15 @@
 CLONAZIONE DI UN PROGETTO LARAVEL
  - git clone SSH_KEY
  - composer update
+ - npm install
  - cp .env.example .env
  - php artisan key:generate
+
+
+ PRIMA INSTALLAZIONE DI NPM (Bootstrap)
+ - npm install
+ - npm i [nome_libreria]
+ - npm run dev
+
+ A PROGETTO TERMINATO
+ - npm run build

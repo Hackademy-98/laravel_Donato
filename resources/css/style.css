@@ -1,0 +1,7 @@
+h1{
+    color: red !important;
+}
+
+.card{
+    --bs-card-title-color: blue;
+}
